@@ -54,6 +54,6 @@ services:
 2、如需对接自己的显卡进行离线训练，请参考oneapi 和 llm_webui的部署方式，先完成一个接口化访问的业务流程，再和本组件对接。
 
 ### 对接IM组件
-1、微信机器人对接教程，请在docs下查找
-2、Telegram/TikTok/淘宝/WhatsApp等其他IM的对接请联系群组https://t.me/+BqvlH6BDOWE3NjQ1
+- 1、微信机器人对接教程，请在docs下查找
+- 2、Telegram/TikTok/淘宝/WhatsApp等其他IM的对接请联系群组https://t.me/+BqvlH6BDOWE3NjQ1
 
