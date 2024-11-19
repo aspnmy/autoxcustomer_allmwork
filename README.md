@@ -13,11 +13,22 @@
 
 ## 构建方式-构建base镜像
 - 1、拉取 redis-v7.0.15 标签镜像，作为基础镜像，主要是为了运行redis环境避免使用远程访问模式。
-- 2、登陆私有库，拉取autoxcustomer_allmwork的最新版本代码包，截至当前时间版本号是v1.21.4
+```
+# 国外请用这个命令拉取基础镜像
+docker pull aspnmy/autoxcustomer_allmwork:latest
+
+# 国内请用下面这个命令拉取基础镜像
+docker pull aspnmy/autoxcustomer_allmwork:redis-v7.0.15-cn
+  ```
+上面的是基础镜像，不是业务主体，业务主体需要联系你的商务BD进行购买，然后在我方私有库中获得拉取代码的账号及密钥，才能进行拉库更新代码。
+
+- 2、登陆私有库，拉取autoxcustomer_allmwork的最新版本代码包，截至当前时间版本号是v1.21.6
 - 3、修改拉取的dockerfile文件中对应的参数，具体修改方式查看帮助文件
 - 4、构建autoxcustomer_allmwork base镜像
 
 ## 构建方式-构建组件镜像
+### 0、服务器硬件要求:
+- 4cpu 4g内存 硬盘空间大于1tb为最佳 带宽5mb够用了
 ### 1、业务正常使用过程中需要使用两个数据库，可以按照下方教程单独构建独立的数据库容器(推荐独立容器)
 ```dockerfile
 name: AutoXcustomer_DB 
