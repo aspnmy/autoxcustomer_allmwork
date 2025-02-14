@@ -81,5 +81,5 @@ services:
 
 ### 对接IM组件
 - 1、微信机器人对接教程，请在docs下查找
-- 2、Telegram/TikTok/淘宝/WhatsApp等其他IM的对接请联系群组https://t.me/+BqvlH6BDOWE3NjQ1
+- 2、Telegram/TikTok/淘宝/WhatsApp等其他IM的对接请联系群组https://t.me/+YfCVhGWyKxoyMDhl
 
